@@ -6,9 +6,11 @@
 }
 
 .about-photo {
-  width: 140px;
-  border-radius: 12px;
-  flex-shrink: 0;        /* prevent image from shrinking */
+  width: 120px;          /* fixed width */
+  height: auto;          /* keep proportions */
+  border-radius: 12px;   /* rounded corners */
+  object-fit: cover;     /* crop if needed */
+  flex-shrink: 0;        /* prevent shrinking weirdly */
 }
 
 .profile-text {
