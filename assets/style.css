@@ -1,3 +1,31 @@
+.profile-box {
+  display: flex;
+  align-items: center;   /* vertically center image + text */
+  gap: 20px;             /* space between photo and text */
+  margin: 16px 0;
+}
+
+.about-photo {
+  width: 140px;
+  border-radius: 12px;
+  flex-shrink: 0;        /* prevent image from shrinking */
+}
+
+.profile-text {
+  flex: 1;               /* let text take remaining width */
+}
+
+/* Responsive: stack photo above text on small screens */
+@media (max-width: 640px) {
+  .profile-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-text {
+    margin-top: 12px;
+  }
+}
 
 :root {
   --bg: #0b0d12;
