@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subhadeep Sahoo — Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span>Subhadeep Sahoo</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" aria-label="Toggle theme">☾</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="hero">
+      <div class="container grid2">
+        <div>
+          <h1>Subhadeep Sahoo</h1>
+          <p class="subtitle">Ph.D. Candidate · Computer Science · UC Davis</p>
+          <p class="muted">Davis, California, USA</p>
+          <div class="links">
+            <a href="https://www.linkedin.com/in/subhadeep-sahoo-8830b9108/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=sE1eD1YAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="mailto:subsahoo@ucdavis.edu">Email</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Research Interests</h3>
+          <ul>
+            <li>Optical networks & deterministic networking</li>
+            <li>Network‑Cloud Fusion (NCF), multi‑entity cooperation</li>
+            <li>Blockchain/DLT‑based provisioning & privacy‑preserving contracts</li>
+            <li>SLA metric generation, monitoring & violation alerts</li>
+            <li>Disaster‑resilient infrastructure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+          
+          <article class="item">
+            <div class="item-head">
+              <h3>Ph.D., Computer Science</h3>
+              <span class="years">2021 – Present</span>
+            </div>
+            <div class="item-sub">University of California, Davis · Davis, CA, USA</div>
+            <p class="muted">GPA: 3.96/4 · Advisors: Prof. Biswanath Mukherjee & Prof. Massimo Tornatore</p>
+          </article>
+          <article class="item">
+            <div class="item-head">
+              <h3>M.Eng. (Research), Communication & Information Systems</h3>
+              <span class="years">2017 – 2020</span>
+            </div>
+            <div class="item-sub">Chongqing University of Posts and Telecommunications · Chongqing, China</div>
+            <p class="muted">GPA: 3.96/4 · Advisor: Prof. Ning‑Hai Bao</p>
+          </article>
+          <article class="item">
+            <div class="item-head">
+              <h3>B.Tech., Electronics & Communication Engineering</h3>
+              <span class="years">2011 – 2015</span>
+            </div>
+            <div class="item-sub">Maulana Abul Kalam Azad University of Technology (formerly WBUT) · Kolkata, India</div>
+            <p class="muted">GPA: 9.12/10</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="cards">
+          
+          <div class="card">
+            <h3>Research Intern — Nokia Bell Labs</h3>
+            <p class="muted">Murray Hill, NJ, USA · Summer 2025</p>
+            <ul>
+              <li>Third‑party brokerage for network & cloud service provisioning via blockchain marketplace.</li><li>Smart contracts, deterministic performance guarantees, SLA metrics & violation alerts.</li><li>Full contract lifecycle tracking.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Research Intern — Nokia Bell Labs</h3>
+            <p class="muted">Murray Hill, NJ, USA · Summer 2023</p>
+            <ul>
+              <li>Software‑defined guaranteed‑latency networking using Linux qdisc & traffic shapers.</li><li>Designed modules and analyzed performance on a lab testbed.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Research Intern — Nokia Bell Labs</h3>
+            <p class="muted">Paris, France · Spring 2020</p>
+            <ul>
+              <li>Edge datacenter latency minimization over deterministic optical networks.</li><li>Built Python simulations and evaluated performance on testbed.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>System Engineer — Tata Consultancy Services Ltd.</h3>
+            <p class="muted">Kolkata, India · 2015 – 2017</p>
+            <ul>
+              <li>Network configuration review and security analysis.</li><li>Penetration testing (OWASP), iperf benchmarks, and vulnerability assessment.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Research Projects</h2>
+        <div class="cards">
+          
+          <div class="card">
+            <h3>US‑Japan JUNO3: Cloud‑Carrier Cooperation for Ultra‑Reliable Backbone Networks</h3>
+            <ul>
+              <li>Cooperation strategies between datacenter providers and optical carriers for disaster recovery.</li><li>Improved restoration efficiency with reduced time/cost. Tools: Python, Bash, CPLEX.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Survivable Virtual Network Embedding in Elastic Optical Networks</h3>
+            <ul>
+              <li>Maximized VN request acceptance and spectrum efficiency while ensuring survivability.</li><li>Tools: Python, C++, Bash.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section alt">
+      <div class="container">
+        <h2>Selected Publications</h2>
+        <ol class="pubs">
+          <li>Post‑Disaster Cloud‑Service Restoration through Datacenter‑Carrier Cooperation — IEEE/OSA JOCN, 2025</li><li>Multi‑Entity Cooperation Platform Facilitating Network‑Cloud Recovery — IEEE/OSA JOCN, 2025</li><li>Service Restoration in Multi‑Entity Network‑Cloud Ecosystems — IEEE Communications Magazine, 2024</li><li>DC‑Carrier Cooperation for Rapid Restoration against PNE‑Node Failure — IEEE/OSA OFC, 2024</li><li>A Novel Strategy of Carrier Cooperation with Coordinated Scheduling — IEEE ONDM, 2023 (Best Paper)</li>
+        </ol>
+        <p class="muted">Full list available on <a href="https://scholar.google.com/citations?user=sE1eD1YAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="container">
+        <h2>Honors & Awards</h2>
+        <ul class="split">
+          <li>Best Paper Award — IEEE ONDM (2023)</li><li>Summer Research Fellowship — UC Davis (2022)</li><li>Graduate Travel Award — UC Davis (2022)</li><li>Graduate Student Research Fellowship — UC Davis (2020–Present)</li><li>Outstanding International Student Award — CQUPT (2020)</li><li>Ericsson Innovation Award — North‑East Asia (2019)</li><li>Best Article Award on “Building a community with shared future,” CQUPT (2019)</li><li>Chinese Government Scholarship (2017–2020)</li> <li>Student of the Year for outstanding achievement in undergraduate study (2025)</li> <li>Secured second position in national embedded systems design competition at IIT, KGP (2013)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid2">
+          <div class="card"><h3>Programming</h3><p>Python, C/C++, Embedded C, SQL, Matlab</p></div><div class="card"><h3>Systems & Tools</h3><p>Linux, Arduino, Nessus, Kali Linux, Iperf, Metasploit</p></div><div class="card"><h3>Writing</h3><p>LaTeX, Word, Visualization tools</p></div><div class="card"><h3>Languages</h3><p>English, Hindi, Bengali</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact">
+          <a href="mailto:subsahoo@ucdavis.edu">subsahoo@ucdavis.edu</a>
+          <a href="mailto:subhadeep.sahoo4@gmail.com">subhadeep.sahoo4@gmail.com</a>
+          <span>+1-530-564-9819</span>
+          <a href="https://www.linkedin.com/in/subhadeep-sahoo-8830b9108/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=sE1eD1YAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Subhadeep Sahoo. Built with a lightweight, responsive design. <span id="themeLabel">Dark</span> mode supported.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
