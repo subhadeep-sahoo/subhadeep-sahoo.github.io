@@ -110,7 +110,41 @@ h3 { margin: 0 0 10px; }
 .item-head { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
 .item-sub { font-weight: 600; margin-top: 4px; }
 
-.pubs { line-height: 1.7; }
+/* Two-column bullet list on desktop, single column on mobile */
+.pubs {
+  list-style: disc inside;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 0;
+}
+
+.pubs.two-col {
+  columns: 2;           /* two columns on wide screens */
+  column-gap: 28px;
+}
+
+@media (max-width: 920px) {
+  .pubs.two-col {
+    columns: 1;         /* collapse to one column on mobile/tablet */
+  }
+}
+
+.pubs li {
+  break-inside: avoid;  /* keep an item in one column */
+  margin: 0 0 12px 0;
+  padding-left: 0.2em;  /* subtle alignment tweak for bullets */
+}
+
+.pubs a {
+  font-weight: 600;
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+.pubs a:hover {
+  text-decoration: underline;
+}
+
 .split { columns: 2; column-gap: 26px; }
 @media (max-width: 720px) { .split { columns: 1; } }
 
