@@ -145,6 +145,10 @@ h3 { margin: 0 0 10px; }
   text-decoration: underline;
 }
 
+.backtotop {
+  margin-top: 32px;   /* increase this value for more space */
+  text-align: center; /* optional: center the button */
+}
 .split { columns: 2; column-gap: 26px; }
 @media (max-width: 720px) { .split { columns: 1; } }
 
