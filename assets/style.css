@@ -232,4 +232,12 @@ h3 { margin: 0 0 10px; }
 @media (max-width: 720px) { .split { columns: 1; } }
 
 .contact { display: flex; gap: 16px; flex-wrap: wrap; }
+.site-header {
+  position: sticky;   /* or use fixed if you want it always pinned */
+  top: 0;
+  z-index: 1000;      /* keeps it above other elements */
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25); /* subtle shadow */
+}
 .site-footer { padding: 32px 0; border-top: 1px solid var(--border); margin-top: 20px; }
