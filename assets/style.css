@@ -94,6 +94,68 @@ h3 { margin: 0 0 10px; }
   text-decoration: none;
 }
 
+/* Two-column rows with date on the right */
+.twocol-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.twocol-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.twocol-row:last-child {
+  border-bottom: none;
+}
+
+.twocol-main {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+
+.twocol-main i {
+  margin-top: 3px;      /* align icon with text */
+  color: var(--accent-2);
+}
+
+.twocol-main a {
+  color: var(--accent-2);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.twocol-main a:hover {
+  text-decoration: underline;
+}
+
+.twocol-meta {
+  color: var(--muted);
+  white-space: nowrap;   /* keep date on one line */
+  font-weight: 600;
+  min-width: fit-content;
+}
+
+/* Mobile: stack date below the text */
+@media (max-width: 720px) {
+  .twocol-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .twocol-meta {
+    margin-top: 6px;
+  }
+}
+
+
 
 .grid2 { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; }
 @media (max-width: 920px) { .grid2 { grid-template-columns: 1fr; } .nav nav { display: none; } }
