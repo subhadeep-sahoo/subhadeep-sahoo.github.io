@@ -94,6 +94,23 @@ h3 { margin: 0 0 10px; }
   text-decoration: none;
 }
 
+.inline-list {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+.inline-list li {
+  margin-bottom: 10px;
+}
+
+.inline-list .meta {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+
 /* Two-column rows with date on the right */
 .twocol-list {
   list-style: none;
