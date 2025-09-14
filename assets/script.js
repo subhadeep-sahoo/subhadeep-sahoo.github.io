@@ -28,3 +28,31 @@
     document.fonts.ready.then(setHeaderOffset);
   }
 })();
+
+(function(){
+  const btn = document.getElementById('menuToggle');
+  const nav = document.getElementById('siteNav');
+  if(!btn || !nav) return;
+
+  function toggleMenu(){
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  btn.addEventListener('click', toggleMenu);
+
+  // Close menu when a link is clicked
+  nav.addEventListener('click', (e) => {
+    if(e.target.tagName === 'A') {
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if(!nav.contains(e.target) && e.target !== btn) {
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
