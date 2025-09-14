@@ -281,6 +281,78 @@ h3 { margin: 0 0 10px; }
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
+/* ===== Dropdown base ===== */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-weight: 600;
+  padding: 0;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  display: none; /* hidden by default */
+  flex-direction: column;
+  gap: 8px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  z-index: 1300;
+}
+
+/* Desktop hover open */
+@media (min-width: 921px) {
+  .dropdown:hover .dropdown-menu { display: flex; }
+}
+
+/* Links inside dropdown */
+.dropdown-menu a {
+  color: var(--text);
+  opacity: .9;
+  text-decoration: none;
+  font-weight: 600;
+}
+.dropdown-menu a:hover {
+  opacity: 1;
+  color: var(--accent-2);
+}
+
+/* ===== Mobile behavior (works with your hamburger) ===== */
+@media (max-width: 920px) {
+  /* Your mobile nav is column; keep dropdown inline with others */
+  .dropdown { width: 100%; }
+  .dropbtn {
+    width: 100%;
+    text-align: left;
+    padding: 8px 0;
+  }
+  .dropdown-menu {
+    position: static;      /* stack inside panel */
+    border: none;
+    box-shadow: none;
+    padding: 0 0 8px 12px; /* slight indent for children */
+  }
+  .dropdown-menu.open { display: flex; } /* toggled by JS */
+}
+
+/* Optional: tighten caret spacing */
+.dropbtn::after {
+  content: "";
+}
+
+
 /* Push page content below header (includes iPhone notch) */
 body {
   padding-top: calc(var(--header-h) + env(safe-area-inset-top, 0));
