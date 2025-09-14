@@ -56,3 +56,38 @@
     }
   });
 })();
+
+// Dropdown toggle (desktop click + mobile tap)
+(function(){
+  const dropdown = document.querySelector('.dropdown');
+  if (!dropdown) return;
+
+  const btn = dropdown.querySelector('.dropbtn');
+  const menu = dropdown.querySelector('.dropdown-menu');
+
+  function toggle(e){
+    e.preventDefault();
+    const isOpen = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  // Click to toggle (works on both desktop & mobile)
+  btn.addEventListener('click', toggle);
+
+  // Close when clicking a menu item
+  menu.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Close when clicking outside (mobile/desktop)
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) {
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+
