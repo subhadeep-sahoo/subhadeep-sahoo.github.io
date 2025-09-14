@@ -175,7 +175,11 @@ h3 { margin: 0 0 10px; }
 
 
 .grid2 { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; }
-@media (max-width: 920px) { .grid2 { grid-template-columns: 1fr; } .nav nav { display: none; } }
+/* @media (max-width: 920px) { .grid2 { grid-template-columns: 1fr; } .nav nav { display: none; } } */
+
+@media (max-width: 920px){
+  .nav nav { display: flex; flex-wrap: wrap; gap: 12px; }
+}
 
 .section { padding: 44px 0; }
 .section.alt { background: linear-gradient(180deg, rgba(255,255,255,0), rgba(0,0,0,.06)); }
